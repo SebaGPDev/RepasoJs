@@ -1,0 +1,67 @@
+/* // Clase padre
+class Forma {
+  constructor() {
+    console.log("Soy una forma geométrica.");
+  }
+}
+
+// Clase hija
+class Cuadrado extends Forma {
+  constructor() {
+    super();
+    console.log("Soy un cuadrado.");
+  }
+}
+
+const c1 = new Cuadrado();
+// Soy una forma geométrica.
+// Soy un cuadrado.
+
+class Forma {
+    type = "geométrica";
+    color = "naranja";
+  
+    constructor() {
+      console.log("Constructor padre finalizado.");
+    }
+  
+    show() {
+      console.log(`Soy una forma ${this.type} de color ${this.color}`);
+    }
+  
+    setColor(color) {
+      this.color = color;
+    }
+  }
+  
+  class Cuadrado extends Forma {
+    type = "cuadrada";
+  
+    constructor() {
+      super();
+      console.log("Constructor hijo finalizado.");
+    }
+  }
+  
+  const c1 = new Cuadrado();
+  c1.show();    // Soy una forma cuadrada de color naranja
+  
+  const c2 = new Cuadrado();
+  c2.setColor("amarillo");
+  c2.show();    // Soy una forma cuadrada de color amarillo
+
+  class Padre {
+    soloPadre() { console.log("Tarea en el padre..."); }
+    padreHijo() { console.log("Tarea en el padre..."); }
+    sobreHijo() { console.log("Tarea en el padre..."); }
+  }
+  
+  class Hijo extends Padre {
+    padreHijo() {
+      super.padreHijo();
+      console.log("Tarea en el hijo...");
+    }
+  
+    soloHijo() { console.log("Tarea en el hijo..."); }
+    sobreHijo() { console.log("Tarea en el hijo..."); }
+  } */
